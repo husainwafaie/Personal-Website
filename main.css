@@ -1,0 +1,675 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Waltograph';
+    src: url('waltographUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Now you can use the font in your CSS by referring to the 'Chirp' font-family */
+body {
+    font-family: 'Product Sans', sans-serif;
+
+
+    /* Use env() for iOS 11.2 or newer */
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.pic-plus-title-socials {
+    display: flex;
+    /*align-items: flex-start; */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Changed from center to flex-start */
+    height: 100%; /* Adjusted height */
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.socials{
+    margin: 0px 4px; 
+}
+
+.social-title {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 6em; /* Adjusted padding for better spacing */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: flex-start; /* Align items to the start (left) */
+    position: fixed; /* Make the left column fixed */
+    height: 100vh; /* Full height */
+    overflow-y: auto;
+}
+
+.second-column {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    /*overflow-y: auto;*/
+    height: 100vh;
+    margin-right: 10%; /* Leave 10% on the right blank */
+    margin-left: 40%; /* Ensure it starts after the left column */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram, .fab.fa-github-square{
+    font-size: 25pt;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the icons horizontally */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Adjusted margin for better spacing */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-icons img {
+    width: auto;
+    height: 2.5em; /* Adjusted height for better visibility */
+}
+
+
+body {
+    font-family: 'Product Sans', sans-serif;
+    background-image: linear-gradient(130deg, #000000 , #002246);
+    padding: 2%;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-y: auto; /* Allow vertical scrollbar on the body */
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}  
+
+a {
+    color: #74ddf7;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+a:hover {
+    color: #1b7798;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Waltograph';
+    border-bottom: 3px solid #45c8e8;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.experience-item:hover .project-image-container img {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: border 0.1s ease-in-out;
+}
+
+
+.text-carousel-container {
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.text-carousel {
+    display: inline-block;
+    animation: scrollText 120s linear infinite;
+}
+
+.text-carousel span {
+    display: inline-block;
+    padding: 0 0.5em;
+    font-size:1em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.text-carousel .year {
+    font-weight: bold;
+    color: #74ddf7;
+}
+.text-carousel .separator {
+    font-weight: bold;
+    color: #74ddf7;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(13%); }
+    100% { transform: translateX(-100%); }
+}
+.typing-effect {
+    display: inline-block;
+    font-family: 'Trebuchet MS', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .1em solid #ffffff;
+    animation: typing 1s steps(180, end) forwards,
+    blink-caret 0.7s infinite step-end alternate;
+    text-align: left; /* Align text to the left */
+}
+
+.content-section {
+    margin-bottom: 2em;
+}
+
+.content-section h3 {
+    text-align: left;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 6.4em; } 
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffffff; }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30%); /* Start off-screen to the right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End at the original position */
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes colorFade {
+    0% {
+        color: white;
+    }
+    33% {
+        color: lightblue;
+    }
+    66% {
+        color: darkblue;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@keyframes gradientFade {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.resume-link {
+    color: rgb(199, 191, 191);
+    font-size: 1.1em;
+    background: none;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.resume-link:hover {
+    color: transparent;
+    text-decoration: underline;
+    background: linear-gradient(to right, white, lightblue, darkblue, white);
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientFade 6s infinite linear;
+}
+
+.fade-in {
+    opacity: 0; /* Initial state */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition for smooth effect */
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInRight 2s ease-out; /* Apply the fadeInRight animation */
+}
+
+.profile-picture {
+    flex: 1;
+    width: auto;
+    max-width: 60%;
+    /*max-width: 50%;*/
+    height: auto;
+    border-radius: 30%;
+    animation: fadeInUp 2s ease-out; /* Apply the fadeInRight animation */
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em; /* Adjust margin as needed */
+    margin-bottom: 3.5em;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em; /* Adjust spacing as needed */
+}
+
+.section a {
+    font-size: 0.9em; /* Adjust font size as needed */
+    color: #8a9b9f;
+    text-decoration: none;
+    position: relative;
+    padding-left: 2em; /* Add some padding to the left */
+    text-align: left; /* Align text to the left */
+    transition: padding-left 0.3s, color 0.3s, font-size 0.3s; /* Add transition for smooth animation */
+}
+
+.section a:hover {
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-left: 3.5em;
+}
+
+.section a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5em;
+    height: 2px;
+    background-color: #83969b;
+    transition: width 0.1s, height 0.3s; /* Add transition for smooth animation */
+}
+
+.section a:hover::before {
+    width: 3em; /* Increase width on hover */
+    height: 2.8px;
+    background-color: #ffffff; /* Change color on hover if needed */
+}
+
+.section a.active {
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-left: 3.5em;
+}
+
+.section a.active::before {
+    width: 3em; /* Increase width on hover */
+    height: 2.8px;
+    background-color: #ffffff; /* Change color on hover if needed */
+}
+
+.experience-item {
+    padding: 1em;
+    transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: flex; /* Add display flex */
+    width: 100%; /* Ensure the link covers the full width */
+    margin-bottom: 2em;
+    animation: fadeInRight 2s ease-out; /* Apply the fadeInRight animation */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.experience-item:hover {
+    background: rgba(255, 255, 255, 0.1); /* Add background on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(116, 221, 247, 0.7); /* Add glowing effect */
+    transform: scale(1.03); /* Scale up on hover */
+}
+
+.experience-duration {
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 0.5em;
+}
+
+.experience-role {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: rgb(199, 191, 191); /* Set title color to grey */
+}
+
+.experience-role a {
+    color: grey; /* Set link color to grey */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.experience-role a:hover {
+    color: #1b7798;
+    text-decoration: underline;
+}
+
+.experience-description {
+    color: grey; /* Set description color to grey */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.experience-description p {
+    color: grey; /* Ensure paragraphs within the description are grey */
+    font-size: 16px;
+}
+
+.skills {
+    margin-top: 0.5em;
+}
+
+.skills span {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #74ddf7;
+    color: #000;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+}
+
+.skills h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #74ddf7;
+}
+
+.skills-logo {
+    transition: transform 0.2s ease;
+}
+
+.skills-logo:hover {
+    transform: scale(1.2);
+}
+
+
+.backend-logos img,
+.frontend-logos img {
+    height: 4em;
+    margin: 0.5em 1em;
+    transition: transform 0.2s ease;
+}
+
+.backend-logos img:hover,
+.frontend-logos img:hover {
+    transform: scale(1.1);
+}
+
+.backend-logos,
+.frontend-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.skills-section-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.skills-section-title-container .line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d8d4d4);
+}
+
+.skills-section-title-container .line.right {
+    background: linear-gradient(to left, transparent, #d8d4d4);
+}
+
+.skills-section-title {
+    margin: 0 1em;
+    white-space: nowrap;
+}
+
+
+/* Ensure entire experience item is clickable */
+.experience-item a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 100%; /* Ensure the link covers the full width */
+}
+
+.experience-item a:hover {
+    color: inherit; /* Keep the color the same on hover */
+}
+
+.experience-content {
+    display: flex;
+    gap: 1em; /* Optional: add space between columns */
+    width: 100%; /* Ensure the content takes the full width */
+}
+
+.experience-date {
+    flex: 0 0 25%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    color: grey;
+}
+
+.experience-item > a > div > div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item a .experience-role span {
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.experience-item a:hover .experience-role span {
+    color: #74ddf7; /* Light blue color for the text */
+}
+
+.experience-item a .experience-date {
+    transition: color 0.3s ease;
+}
+
+.experience-item a:hover .experience-date {
+    color: #74ddf7;
+}
+
+h1 {
+    font-family: 'Waltograph';
+    color: #74ddf7;
+    text-align: left; /* Align text to the left */
+}
+
+footer {
+    border-top: 1px solid #1b1b1b;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+i {
+    color: #FFFFFF;
+}
+
+.profile-container {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .profile-picture {
+        height: 20em;
+    }
+
+
+    h1 {
+        font-size: 4em;
+        margin-left: 0.5em; 
+    }
+    .social-title {
+        padding-top: 2.5em;
+        padding-left: 1em;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .second-column {
+        padding-top: 2.5em;
+        padding-left: 1em;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .social-icons img {
+        height: 4.3em; 
+    }
+
+    .social-icons {
+        padding-top: 1.5em;
+    }
+    p {
+        font-size: 1.8em;
+    }
+
+    .social-icons a {
+        margin: 0 1.3em;
+    }
+
+    h3 {
+        font-size: 3em;
+        padding-top: 0.7em;
+    }
+
+    ul {
+        font-size: 1.8em;
+
+    }
+
+    .text-carousel span {
+        font-size: 1.3em;
+    }
+
+    footer {
+        font-size: 1.3em;
+    }
+
+    .typing-effect {
+        width: 16em;
+        font-family: 'Product Sans', sans-serif;
+    }
+
+    @keyframes typing {
+    from { width: 0; }
+    to { width: 7.5em; } 
+}
+
+    @keyframes scrollText {
+        0% { transform: translateX(5%); }
+        100% { transform: translateX(-100%); }
+    }
+
+}
