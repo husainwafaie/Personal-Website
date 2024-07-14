@@ -89,19 +89,6 @@ html {
     overflow-y: auto;
 }
 
-.second-column {
-    flex: 1;
-    min-width: 50%;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    /*overflow-y: auto;*/
-    height: 100vh;
-    margin-right: 10%; /* Leave 10% on the right blank */
-    margin-left: 40%; /* Ensure it starts after the left column */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
 
 .fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram, .fab.fa-github-square{
     font-size: 25pt;
@@ -601,13 +588,64 @@ li {
     color: #FFFFFF;
 }
 
+.fixed-column {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    margin-left: 5%; /* Ensure it starts after the left column */
+    display: flex;
+    flex-direction: column;
+    padding: 6em;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: flex-start; /* Align items to the start (left) */
+    position: fixed; /* Make the left column fixed */
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.second-column {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    /*overflow-y: auto;*/
+    margin-right: 10%; /* Leave 10% on the right blank */
+    margin-left: 50%; /* Ensure it starts after the left column */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
 
 
-@media only screen and (hover: none) and (pointer: coarse){
+@media only screen and (hover: none) and (pointer: coarse) {
     .profile-picture {
         height: 20em;
     }
 
+    .fixed-column {
+        position: relative; /* Change from fixed to relative */
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 1em; /* Adjust padding for mobile view */
+        height: auto; /* Adjust height for mobile view */
+        overflow-y: visible;
+    }
+
+    .second-column {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1em;
+        height: auto;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    .pic-plus-title-socials {
+        flex-direction: column; /* Stack the columns vertically */
+        align-items: center; /* Center align the items */
+    }
 
     h1 {
         font-size: 4em;
