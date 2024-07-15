@@ -633,6 +633,7 @@ li {
     }
 
     .second-column {
+        position: relative; /* Change from fixed to relative */
         min-width: 100%;
         max-width: 100%;
         margin-left: 0;
@@ -645,6 +646,18 @@ li {
     .pic-plus-title-socials {
         flex-direction: column; /* Stack the columns vertically */
         align-items: center; /* Center align the items */
+    }
+
+    .container {
+        flex-direction: column; /* Stack the columns vertically */
+    }
+
+    .fade-in {
+        text-align: center;
+    }
+    
+    .fade-in.visible {
+        text-align: center;
     }
 
     h1 {
