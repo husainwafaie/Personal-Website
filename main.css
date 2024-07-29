@@ -60,6 +60,12 @@ html {
     /*align-items: flex-start; */
 }
 
+.top-name h1 {
+    margin: 0; 
+    font-size: 3em; 
+    margin-bottom: 2px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -147,6 +153,12 @@ h3 {
     color: #FFFFFF;
 }
 
+.experience-date img {
+    height: 6em; 
+    width: 9em; 
+    margin-top: 0.4em;
+}
+
 .experience-item:hover .project-image-container img {
     border: 1px solid rgba(255, 255, 255, 0.7);
     transition: border 0.1s ease-in-out;
@@ -203,6 +215,12 @@ h3 {
 
 .content-section h3 {
     text-align: left;
+}
+
+.content-section p {
+    font-size: 17.5px; 
+    color: grey; 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @keyframes typing {
@@ -527,6 +545,8 @@ h3 {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: bold;
     color: grey;
+    font-size: 13.5px; 
+    margin-top: 0.4em;
 }
 
 .experience-item > a > div > div:nth-child(2) {
@@ -580,6 +600,8 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px; 
+    align-self: center;
 }
 
 
@@ -622,13 +644,37 @@ li {
         height: 20em;
     }
 
+    .top-name h1 {
+        margin: 0; 
+        font-size: 4em; 
+        margin-bottom: 0.8em;
+        margin-top: 1em;
+    }
+
+    .starter-text p {
+        font-size: 2.3em;
+    }
+
     .profile-container {
         flex: 1;
+        margin-top: 2.7em;
+        margin-bottom: 5em;
         max-width: 100%;
         width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
+        align-self: center;
+    }
+    
+    .section a {
+        font-size: 1.8em; /* Adjust font size as needed */
+        color: #8a9b9f;
+        text-decoration: none;
+        position: relative;
+        padding-left: 2em; /* Add some padding to the left */
+        text-align: left; /* Align text to the left */
+        transition: padding-left 0.3s, color 0.3s, font-size 0.3s; /* Add transition for smooth animation */
     }
 
     .fixed-column {
@@ -652,6 +698,13 @@ li {
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
 
+    .content-section p {
+        font-size: 29px; 
+        color: grey; 
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        text-align: left;
+    }
+
     .pic-plus-title-socials {
         flex-direction: column; /* Stack the columns vertically */
         align-items: center; /* Center align the items */
@@ -659,6 +712,55 @@ li {
 
     .container {
         flex-direction: column; /* Stack the columns vertically */
+        padding: 0; /* Removed padding */
+    }
+
+    .experience-role {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 1.7em;
+        text-align: left;
+        margin-bottom: 0.5em;
+        color: rgb(199, 191, 191); /* Set title color to grey */
+    }
+
+    .experience-date {
+        flex: 0 0 25%;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: bold;
+        color: grey;
+        font-size: 18.5px; 
+        margin-top: 0.4em;
+    }
+
+    .resume-link {
+        color: rgb(199, 191, 191);
+        font-size: 2.1em;
+        background: none;
+        transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    .skills {
+        justify-content: flex-start; /* Align items to the start (left) */
+        align-items: flex-start; /* Align items to the start (left) */
+        text-align: left;
+    }
+
+    .skills span {
+        display: inline-block;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #74ddf7;
+        color: #000;
+        padding: 0.2em 0.5em;
+        border-radius: 5px;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 1.4em;
+    }
+
+    .experience-date img {
+        height: 6em; 
+        width: 9em; 
+        margin-top: 0.4em;
     }
 
     .fade-in {
@@ -670,7 +772,7 @@ li {
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 5em;
         margin-left: 0.5em; 
     }
     .social-title {
@@ -693,7 +795,7 @@ li {
         padding-top: 1.5em;
     }
     p {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .social-icons a {
@@ -701,13 +803,12 @@ li {
     }
 
     h3 {
-        font-size: 3em;
+        font-size: 3.5em; /* Increased font size */
         padding-top: 0.7em;
     }
 
     ul {
-        font-size: 1.8em;
-
+        font-size: 2em; /* Increased font size */
     }
 
     .text-carousel span {
