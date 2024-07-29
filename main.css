@@ -622,6 +622,15 @@ li {
         height: 20em;
     }
 
+    .profile-container {
+        flex: 1;
+        max-width: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .fixed-column {
         position: relative; /* Change from fixed to relative */
         min-width: 100%;
