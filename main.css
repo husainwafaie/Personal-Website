@@ -646,13 +646,13 @@ li {
 
     .top-name h1 {
         margin: 0; 
-        font-size: 4em; 
+        font-size: 5em; 
         margin-bottom: 0.8em;
         margin-top: 1em;
     }
 
     .starter-text p {
-        font-size: 2.3em;
+        font-size: 2.7em;
     }
 
     .profile-container {
@@ -699,25 +699,28 @@ li {
     }
 
     .content-section p {
-        font-size: 29px; 
+        font-size: 40px;
         color: grey; 
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         text-align: left;
     }
 
     .pic-plus-title-socials {
+        margin-right: 0px;
         flex-direction: column; /* Stack the columns vertically */
         align-items: center; /* Center align the items */
     }
 
     .container {
         flex-direction: column; /* Stack the columns vertically */
-        padding: 0; /* Removed padding */
+        /*margin: 0 !important;*/
+        /*padding: 0 !important; /* Changed from center to flex-start */
+        height: 100%;
     }
 
     .experience-role {
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 1.7em;
+        font-size: 2.4em;
         text-align: left;
         margin-bottom: 0.5em;
         color: rgb(199, 191, 191); /* Set title color to grey */
@@ -728,13 +731,14 @@ li {
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         font-weight: bold;
         color: grey;
-        font-size: 18.5px; 
+        font-size: 32px; 
         margin-top: 0.4em;
     }
 
     .resume-link {
         color: rgb(199, 191, 191);
-        font-size: 2.1em;
+        font-size: 3em;
+        text-decoration: underline;
         background: none;
         transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
     }
@@ -754,8 +758,12 @@ li {
         border-radius: 5px;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
-        font-size: 1.4em;
+        font-size: 2.2em;
     }
+
+    /* .skills-section-title h1 {
+        font-size: 5em;
+    } */
 
     .experience-date img {
         height: 6em; 
@@ -804,6 +812,8 @@ li {
 
     h3 {
         font-size: 3.5em; /* Increased font size */
+        justify-content: center;
+        display: flex;
         padding-top: 0.7em;
     }
 
