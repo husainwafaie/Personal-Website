@@ -1,10 +1,6 @@
 # <h1 align="center"> Husain Wafaie's Personal Website </h1>
 
-This repository contains the source code for my personal website, showcasing my portfolio, skills, and experiences.
-
-## Description emoji
-
-This website serves as a comprehensive portfolio, highlighting my background in Computer Science and Engineering, work experiences, projects, and technical skills. It's designed to provide visitors with an overview of my professional journey and capabilities.
+This repository contains the source code for my personal website, showcasing my portfolio, skills, and experiences. This website serves as a comprehensive portfolio, highlighting my background in Computer Science and Engineering, work experiences, projects, and technical skills. It's designed to provide visitors with an overview of my professional journey and capabilities.
 
 ## 🌟 Features
 
