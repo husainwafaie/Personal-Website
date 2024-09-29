@@ -52,7 +52,7 @@ Here's a reference for the colors used throughout the website:
 
 Husain Wafaie - [husainwafaie@gmail.com](mailto:husainwafaie@gmail.com)
 
-## :💡 Acknowledgments
+## 💡 Acknowledgments
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Font Awesome](https://fontawesome.com/)
