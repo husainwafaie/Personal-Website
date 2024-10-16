@@ -857,6 +857,69 @@ li {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         font-size: 2.1em;
     }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .pic-plus-title-socials {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100vw !important;
+        max-width: none !important;
+        overflow-x: hidden;
+    }
+
+    .fixed-column,
+    .second-column {
+        position: static;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 1em !important;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .col-sm-6,
+    .offset-sm-6 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .fixed-top {
+        position: static !important;
+    }
+
+    .social-title,
+    .second-column {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+
+    .profile-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+   
+
+    /* Ensure images don't overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .resume-button {
