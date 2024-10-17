@@ -964,6 +964,24 @@ li {
         font-size: 4em;
     }
 
+    .skills-logo {
+        transform: scale(1.5);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
+
+    .skills .row {
+        margin-bottom: 4em;
+    }
+
+    .skills .col-3,
+    .skills .col-4,
+    .skills .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
 }
 
 .resume-button {
