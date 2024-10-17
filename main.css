@@ -217,6 +217,8 @@ h3 {
 
 .content-section p {
     font-size: 17.5px; 
+    margin-left: 3%;
+    margin-right: 3%;
     color: grey; 
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -652,10 +654,13 @@ li {
         font-size: 6em; 
         margin-bottom: 0.8em;
         margin-top: 1em;
+        margin-left: 5%;
     }
 
     .starter-text p {
         font-size: 2.7em;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     .profile-container {
@@ -843,7 +848,7 @@ li {
 
     @keyframes typing {
         from { width: 0; }
-        to { width: 6.6em; } 
+        to { width: 6.9em; } 
     }
 
     @keyframes scrollText {
@@ -959,6 +964,24 @@ li {
         font-size: 4em;
     }
 
+    .skills-logo {
+        transform: scale(1.5);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
+
+    .skills .row {
+        margin-bottom: 4em;
+    }
+
+    .skills .col-3,
+    .skills .col-4,
+    .skills .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
 }
 
 .resume-button {
