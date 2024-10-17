@@ -39,12 +39,10 @@
     font-style: normal;
 }
 
-/* Now you can use the font in your CSS by referring to the 'Chirp' font-family */
 body {
     font-family: 'Product Sans', sans-serif;
 
 
-    /* Use env() for iOS 11.2 or newer */
     padding-top: env(safe-area-inset-top);
     padding-right: env(safe-area-inset-right);
     padding-bottom: env(safe-area-inset-bottom);
@@ -69,8 +67,8 @@ html {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Changed from center to flex-start */
-    height: 100%; /* Adjusted height */
+    align-items: flex-start; 
+    height: 100%;
 }
 
 .nav-link {
@@ -87,11 +85,11 @@ html {
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 4em 6em; /* Adjusted padding for better spacing */
-    justify-content: flex-start; /* Align items to the start (left) */
-    align-items: flex-start; /* Align items to the start (left) */
-    position: fixed; /* Make the left column fixed */
-    height: 100vh; /* Full height */
+    padding: 4em 6em;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    position: fixed; 
+    height: 100vh; 
     overflow-y: auto;
 }
 
@@ -103,19 +101,19 @@ html {
 .social-icons {
     text-align: center;
     margin-top: 1%;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center the icons horizontally */
+    display: flex;
+    justify-content: center; 
 }
 
 .social-icons a {
-    margin: 0 20px; /* Adjusted margin for better spacing */
+    margin: 0 20px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .social-icons img {
     width: auto;
-    height: 2.5em; /* Adjusted height for better visibility */
+    height: 2.5em;
 }
 
 
@@ -124,8 +122,8 @@ body {
     background-image: linear-gradient(130deg, #000000 , #002246);
     padding: 2%;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
-    overflow-y: auto; /* Allow vertical scrollbar on the body */
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
 
 p {
@@ -206,7 +204,7 @@ h3 {
     border-right: .1em solid #ffffff;
     animation: typing 1s steps(180, end) forwards,
     blink-caret 0.7s infinite step-end alternate;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .content-section {
@@ -236,11 +234,11 @@ h3 {
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(30%); /* Start off-screen to the right */
+        transform: translateX(30%); /* start */
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* End at the original position */
+        transform: translateX(0); /* end */
     }
 }
 
@@ -313,13 +311,13 @@ h3 {
 
 .fade-in {
     opacity: 0; /* Initial state */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition for smooth effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-    animation: fadeInRight 2s ease-out; /* Apply the fadeInRight animation */
+    animation: fadeInRight 2s ease-out;
 }
 
 .profile-picture {
@@ -329,30 +327,30 @@ h3 {
     /*max-width: 50%;*/
     height: auto;
     border-radius: 30%;
-    animation: fadeInUp 2s ease-out; /* Apply the fadeInRight animation */
+    animation: fadeInUp 2s ease-out;
 }
 
 .sections {
     display: flex;
     flex-direction: column;
-    margin-top: 9%; /* Adjust margin as needed */
+    margin-top: 9%;
     margin-bottom: 10%;
 }
 
 .section {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5em; /* Adjust spacing as needed */
+    margin-bottom: 1.5em;
 }
 
 .section a {
-    font-size: 0.9em; /* Adjust font size as needed */
+    font-size: 0.9em;
     color: #8a9b9f;
     text-decoration: none;
     position: relative;
-    padding-left: 2em; /* Add some padding to the left */
-    text-align: left; /* Align text to the left */
-    transition: padding-left 0.3s, color 0.3s, font-size 0.3s; /* Add transition for smooth animation */
+    padding-left: 2em;
+    text-align: left;
+    transition: padding-left 0.3s, color 0.3s, font-size 0.3s;
 }
 
 .section a:hover {
@@ -370,13 +368,13 @@ h3 {
     width: 1.5em;
     height: 2px;
     background-color: #83969b;
-    transition: width 0.1s, height 0.3s; /* Add transition for smooth animation */
+    transition: width 0.1s, height 0.3s;
 }
 
 .section a:hover::before {
-    width: 3em; /* Increase width on hover */
+    width: 3em;
     height: 2.8px;
-    background-color: #ffffff; /* Change color on hover if needed */
+    background-color: #ffffff;
 }
 
 .section a.active {
@@ -386,31 +384,31 @@ h3 {
 }
 
 .section a.active::before {
-    width: 3em; /* Increase width on hover */
+    width: 3em;
     height: 2.8px;
-    background-color: #ffffff; /* Change color on hover if needed */
+    background-color: #ffffff;
 }
 
 .experience-item {
     padding: 1em;
     transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    display: flex; /* Add display flex */
-    width: 100%; /* Ensure the link covers the full width */
+    display: flex;
+    width: 100%;
     margin-bottom: 2em;
-    animation: fadeInRight 2s ease-out; /* Apply the fadeInRight animation */
+    animation: fadeInRight 2s ease-out;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .container {
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: hidden; 
 }
 
 .experience-item:hover {
-    background: rgba(255, 255, 255, 0.1); /* Add background on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(116, 221, 247, 0.7); /* Add glowing effect */
-    transform: scale(1.03); /* Scale up on hover */
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(116, 221, 247, 0.7); 
+    transform: scale(1.03);
 }
 
 .experience-duration {
@@ -423,11 +421,11 @@ h3 {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.1em;
     margin-bottom: 0.5em;
-    color: rgb(199, 191, 191); /* Set title color to grey */
+    color: rgb(199, 191, 191); 
 }
 
 .experience-role a {
-    color: grey; /* Set link color to grey */
+    color: grey; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -438,12 +436,12 @@ h3 {
 }
 
 .experience-description {
-    color: grey; /* Set description color to grey */
+    color: grey; 
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .experience-description p {
-    color: grey; /* Ensure paragraphs within the description are grey */
+    color: grey;
     font-size: 16px;
 }
 
@@ -522,22 +520,21 @@ h3 {
 }
 
 
-/* Ensure entire experience item is clickable */
 .experience-item a {
     display: flex;
     text-decoration: none;
     color: inherit;
-    width: 100%; /* Ensure the link covers the full width */
+    width: 100%;
 }
 
 .experience-item a:hover {
-    color: inherit; /* Keep the color the same on hover */
+    color: inherit; 
 }
 
 .experience-content {
     display: flex;
-    gap: 1em; /* Optional: add space between columns */
-    width: 100%; /* Ensure the content takes the full width */
+    gap: 1em; 
+    width: 100%;
 }
 
 .experience-date {
@@ -556,11 +553,11 @@ h3 {
 }
 
 .experience-item a .experience-role span {
-    transition: color 0.3s ease; /* Smooth transition for color */
+    transition: color 0.3s ease;
 }
 
 .experience-item a:hover .experience-role span {
-    color: #74ddf7; /* Light blue color for the text */
+    color: #74ddf7; 
 }
 
 .experience-item a .experience-date {
@@ -574,7 +571,7 @@ h3 {
 h1 {
     font-family: 'Waltograph';
     color: #74ddf7;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 
@@ -614,13 +611,13 @@ li {
     flex: 1;
     min-width: 50%;
     max-width: 50%;
-    margin-left: 5%; /* Ensure it starts after the left column */
+    margin-left: 5%; 
     display: flex;
     flex-direction: column;
     padding: 6em;
-    justify-content: flex-start; /* Align items to the start (left) */
-    align-items: flex-start; /* Align items to the start (left) */
-    position: fixed; /* Make the left column fixed */
+    justify-content: flex-start;
+    align-items: flex-start; 
+    position: fixed; 
     height: 100vh;
     overflow-y: auto;
 }
@@ -633,9 +630,9 @@ li {
     flex-direction: column;
     padding: 1em;
     /*overflow-y: auto;*/
-    margin-right: 10%; /* Leave 10% on the right blank */
-    margin-left: 50%; /* Ensure it starts after the left column */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-right: 10%;
+    margin-left: 50%; 
+    box-sizing: border-box; 
 }
 
 
@@ -668,34 +665,34 @@ li {
     }
     
     .section a {
-        font-size: 1.8em; /* Adjust font size as needed */
+        font-size: 1.8em; 
         color: #8a9b9f;
         text-decoration: none;
         position: relative;
-        padding-left: 2em; /* Add some padding to the left */
-        text-align: left; /* Align text to the left */
-        transition: padding-left 0.3s, color 0.3s, font-size 0.3s; /* Add transition for smooth animation */
+        padding-left: 2em; 
+        text-align: left; 
+        transition: padding-left 0.3s, color 0.3s, font-size 0.3s; 
     }
 
     .fixed-column {
-        position: relative; /* Change from fixed to relative */
+        position: relative; 
         min-width: 100%;
         max-width: 100%;
         margin-left: 0;
-        padding: 1em; /* Adjust padding for mobile view */
-        height: auto; /* Adjust height for mobile view */
+        padding: 1em; 
+        height: auto; 
         overflow-y: visible;
     }
 
     .second-column {
-        position: relative; /* Change from fixed to relative */
+        position: relative;
         min-width: 100%;
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
         padding: 1em;
         height: auto;
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        box-sizing: border-box;
     }
 
     .content-section p {
@@ -707,14 +704,14 @@ li {
 
     .pic-plus-title-socials {
         margin-right: 0px;
-        flex-direction: column; /* Stack the columns vertically */
-        align-items: center; /* Center align the items */
+        flex-direction: column;
+        align-items: center; 
     }
 
     .container {
-        flex-direction: column; /* Stack the columns vertically */
+        flex-direction: column; 
         /*margin: 0 !important;*/
-        /*padding: 0 !important; /* Changed from center to flex-start */
+        /*padding: 0 !important; /* */
         height: 100%;
     }
 
@@ -723,7 +720,7 @@ li {
         font-size: 2.4em;
         text-align: left;
         margin-bottom: 0.5em;
-        color: rgb(199, 191, 191); /* Set title color to grey */
+        color: rgb(199, 191, 191);
     }
 
     .experience-date {
@@ -744,8 +741,8 @@ li {
     }
 
     .skills {
-        justify-content: flex-start; /* Align items to the start (left) */
-        align-items: flex-start; /* Align items to the start (left) */
+        justify-content: flex-start;
+        align-items: flex-start;
         text-align: left;
     }
 
@@ -811,14 +808,14 @@ li {
     }
 
     h3 {
-        font-size: 3.5em; /* Increased font size */
+        font-size: 3.5em;
         justify-content: center;
         display: flex;
         padding-top: 0.7em;
     }
 
     ul {
-        font-size: 2em; /* Increased font size */
+        font-size: 2em;
     }
 
     .text-carousel span {
@@ -911,15 +908,47 @@ li {
     .profile-container {
         max-width: 100%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-   
+    .profile-picture {
+        max-width: 50%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 30%;
+    }
 
-    /* Ensure images don't overflow */
     img {
         max-width: 100%;
         height: auto;
     }
+
+    .sections {
+        display: none;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .social-icons a {
+        margin: 0 1em;
+    }
+
+    .profile-container {
+        margin-top: 2em;
+    }
+
+    .fa.fa-envelope-o, .fa-linkedin-square, .fa.fa-github, .fa.fa-instagram, .fab.fa-github-square{
+        font-size: 4em;
+    }
+
 }
 
 .resume-button {
