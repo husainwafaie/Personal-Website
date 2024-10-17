@@ -643,7 +643,7 @@ li {
 
     .top-name h1 {
         margin: 0; 
-        font-size: 5em; 
+        font-size: 6em; 
         margin-bottom: 0.8em;
         margin-top: 1em;
     }
@@ -833,7 +833,7 @@ li {
 
     @keyframes typing {
         from { width: 0; }
-        to { width: 7.5em; } 
+        to { width: 6.6em; } 
     }
 
     @keyframes scrollText {
@@ -938,7 +938,7 @@ li {
     }
 
     .social-icons a {
-        margin: 0 1em;
+        margin: 0 4em;
     }
 
     .profile-container {
