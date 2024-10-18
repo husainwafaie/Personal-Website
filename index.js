@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once it has become visible
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
     fadeInElements.forEach(element => {
         observer.observe(element);
-        element.classList.add('fade-in'); // Apply the initial fade-in class
+        element.classList.add('fade-in');
     });
 });
 
