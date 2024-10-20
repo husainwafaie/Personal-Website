@@ -50,7 +50,9 @@ document.querySelectorAll('.scroll-link').forEach(anchor => {
         e.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
         });
     });
 });
